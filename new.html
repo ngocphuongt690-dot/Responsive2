@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/syte.css">
+
+    <style>
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .form-control {
+            width: 350px;
+        }
+
+        .navbar-nav {
+            gap: 5px;
+        }
+
+        .new-banner img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+        }
+
+        .new-text {
+            width: 20%;
+        }
+
+        .post {
+            height: 60px;
+            overflow: hidden;
+        }
+
+        .post img {
+            width: 100%;
+            height: 60px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container p-0">
+            <div class="top-header py-3">
+                <div class="row align-items-center">
+
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="image/1.jpg" alt="Logo" class="logo">
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <form class="d-flex justify-content-center">
+                            <input class="form-control me-2" type="text" placeholder="Search">
+                            <button class="btn btn-primary" type="button">Search</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-3">
+                        <button class="btn btn-outline-primary" type="button">
+                            Đăng nhập
+                        </button>
+
+                        <button class="btn btn-primary" type="button">
+                            Mua hàng
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TRANG CHỦ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">THỜI SỰ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PHÁP LUẬT</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SỨC KHOẺ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ĐỜI SỐNG</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DU LỊCH</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">KINH DOANH</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BẤT ĐỘNG SẢN</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">THỂ THAO</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row my-3">
+
+            <div class="col-md-9" style="height:550px;">
+
+                <div class="new-banner">
+                    <img src="image/b1b1.jpg" alt="">
+                </div>
+
+                <div class="row">
+
+                    <div class="new-text text-center p-4">
+                        <h6>Tin tức 1</h6>
+                            Khai mạc Hội nghị Trung ương 4 khóa XIV bàn về xây dựng Đảng và phát triển.
+                        
+                            <div class="row">
+                            <img src="image/b1b1.jpg" alt="">
+                        </div>
+                        
+                        </p>
+                    </div>
+
+                    <div class="new-text text-center p-4">
+                        <h6>Tin tức 2</h6>
+                            Áp dụng mức chuẩn trợ cấp xã hội mới 540.000 đồng/tháng từ ngày 5/10.
+                        </p>
+                    </div>
+
+                    <div class="new-text text-center p-4">
+                        <h6>Tin tức 3</h6>
+                            Sân bay Long Thành dự kiến khai thác thương mại từ tháng 12 tới.
+                        </p>
+                    </div>
+
+                    <div class="new-text text-center p-4">
+                        <h6>Tin tức 4</h6>
+                            Hà Nội nhận hai giải thưởng lớn tại World Travel Awards 2026.
+                        </p>
+                    </div>
+
+                    <div class="new-text text-center p-4">
+                        <h6>Tin tức 5</h6>
+                            Mỹ đề xuất đàm phán 3 bên với Nga và Ukraine vào cuối tháng 10.
+                        </p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="col-md-3" style="height:500px;">
+
+                <div class="row p-1">
+                    <div class="col-md-3 post p-0">
+                        <img src="image/honor-600s-5g-6gb-128gb-060926-115312-396-600x600.jpg" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <p style="font-size:12px;">
+                            VNPT đang triển khai chương trình nâng cấp trải nghiệm Internet diện rộng kèm ưu đãi lớn.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row p-1">
+                    <div class="col-md-3 post p-0">
+                        <img src="image/iphone-17-xanh-thumb-600x600.jpg" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <p style="font-size:12px;">
+                            FPT Telecom đặt mục tiêu doanh thu lớn và kế hoạch đầu tư mạnh vào tuyến cáp quang biển ALC.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row p-1">
+                    <div class="col-md-3 post p-0">
+                        <img src="image/realme-16t-xanh-thumb-600x600.jpg" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <p style="font-size:12px;">
+                            Các cơ quan chức năng đẩy mạnh tuyên truyền kỹ năng số và phòng chống lừa đảo trực tuyến.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row p-1">
+                    <div class="col-md-3 post p-0">
+                        <img src="image/realme-16t-xanh-thumb-600x600.jpg" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <p style="font-size:12px;">
+                            Quy định mới yêu cầu các tài khoản định danh trên VNeID phải sử dụng số điện thoại chính chủ để đảm bảo an ninh mạng.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row p-1">
+                    <div class="col-md-3 post p-0">
+                        <img src="image/samsung-galaxy-z-fold8-kem-thumb-600x600.jpg" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <p style="font-size:12px;">
+                            Khi AI giúp "bot" thông minh hơn, ranh giới giữa con người và máy móc trên môi trường số ngày càng mờ nhạt.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <section id="san-pham">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="fw-bold mb-0">Sản phẩm nổi bật</h2>
+                <span id="resultCount" class="text-muted"></span>
+            </div>
+
+            <div class="row g-4" id="productList">
+
+                <div class="col-6 col-lg-3 product-item" data-name="Honor 600S 5G">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/honor-600s-5g-6gb-128gb-060926-115312-396-600x600.jpg"
+                            class="card-img-top" alt="Honor 600S 5G">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Honor 600S 5G 6GB/128GB</h5>
+                            <p class="card-text text-muted">Màn hình đẹp, hiệu năng ổn định, hỗ trợ 5G.</p>
+                            <div class="mt-auto">
+                                <div class="price">6.990.000đ</div>
+                                <div class="old-price mb-3">7.490.000đ</div>
+                                <a href="detai.html" class="btn btn-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 product-item" data-name="Samsung Galaxy A56">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/samsung-galaxy-s26-fe-5g-blue-thumb-600x600.jpg"
+                            class="card-img-top" alt="Samsung Galaxy A56">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Samsung Galaxy A56</h5>
+                            <p class="card-text text-muted">Thiết kế hiện đại, camera đa dụng.</p>
+                            <div class="mt-auto">
+                                <div class="price">9.490.000đ</div>
+                                <div class="old-price mb-3">10.490.000đ</div>
+                                <a href="detai.html" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 product-item" data-name="Xiaomi Redmi Note">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/samsung-galaxy-z-fold8-kem-thumb-600x600.jpg"
+                            class="card-img-top" alt="Xiaomi Redmi Note">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Xiaomi Redmi Note</h5>
+                            <p class="card-text text-muted">Pin tốt, màn hình lớn, phù hợp nhu cầu hằng ngày.</p>
+                            <div class="mt-auto">
+                                <div class="price">5.990.000đ</div>
+                                <div class="old-price mb-3">6.490.000đ</div>
+                                <a href="detai.html" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 product-item" data-name="iPhone 15">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/xiaomi-redmi-note-17-4g-purple-thumb-600x600.jpg"
+                            class="card-img-top" alt="iPhone 15">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">iPhone 15</h5>
+                            <p class="card-text text-muted">Thiết kế cao cấp, hiệu năng mạnh mẽ.</p>
+                            <div class="mt-auto">
+                                <div class="price">18.990.000đ</div>
+                                <div class="old-price mb-3">20.490.000đ</div>
+                                <a href="detai.html" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 product-item" data-name="Samsung Galaxy S25">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/honor-600s-5g-6gb-128gb-060926-115312-396-600x600.jpg"
+                            class="card-img-top" alt="Samsung Galaxy S25">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Samsung Galaxy S25</h5>
+                            <p class="card-text text-muted">Hiệu năng cao, camera sắc nét, thiết kế sang trọng.</p>
+                            <div class="mt-auto">
+                                <div class="price">19.490.000đ</div>
+                                <div class="old-price mb-3">21.490.000đ</div>
+                                <a href="detai.html" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 product-item" data-name="OPPO Reno 14">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/iphone-17-pro-max-cam-thumb-600x600.jpg"
+                            class="card-img-top" alt="OPPO Reno 14">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">OPPO Reno 14</h5>
+                            <p class="card-text text-muted">Camera đẹp, thiết kế trẻ trung, sạc nhanh.</p>
+                            <div class="mt-auto">
+                                <div class="price">11.990.000đ</div>
+                                <div class="old-price mb-3">12.990.000đ</div>
+                                <a href="detai.html" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 product-item" data-name="Vivo V50">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/iphone-17-xanh-thumb-600x600.jpg"
+                            class="card-img-top" alt="Vivo V50">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Vivo V50</h5>
+                            <p class="card-text text-muted">Màn hình AMOLED, camera chân dung nổi bật.</p>
+                            <div class="mt-auto">
+                                <div class="price">10.490.000đ</div>
+                                <div class="old-price mb-3">11.490.000đ</div>
+                                <a href="detai.html" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 product-item" data-name="Realme 14 Pro">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/iphone-18-pro-do-thumb-600x600.jpg"
+                            class="card-img-top" alt="Realme 14 Pro">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Realme 14 Pro</h5>
+                            <p class="card-text text-muted">Cấu hình tốt, pin dung lượng lớn.</p>
+                            <div class="mt-auto">
+                                <div class="price">8.490.000đ</div>
+                                <div class="old-price mb-3">9.490.000đ</div>
+                                <a href="detai.html" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 product-item" data-name="Google Pixel 9">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/iphone-18-pro-max-den-thumb-600x600.jpg"
+                            class="card-img-top" alt="Google Pixel 9">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Google Pixel 9</h5>
+                            <p class="card-text text-muted">Camera AI thông minh, trải nghiệm Android thuần.</p>
+                            <div class="mt-auto">
+                                <div class="price">16.490.000đ</div>
+                                <div class="old-price mb-3">17.990.000đ</div>
+                                <a href="detai.html" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 product-item" data-name="OnePlus 13">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/iphone-duo-white-thumb-600x600.jpg"
+                            class="card-img-top" alt="OnePlus 13">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">OnePlus 13</h5>
+                            <p class="card-text text-muted">Hiệu năng mạnh, màn hình cao cấp, sạc siêu nhanh.</p>
+                            <div class="mt-auto">
+                                <div class="price">17.990.000đ</div>
+                                <div class="old-price mb-3">19.490.000đ</div>
+                                <a href="detai.html" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 product-item" data-name="Huawei Nova 13">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/oppo-reno16-f-trang-thumb-600x600.jpg"
+                            class="card-img-top" alt="Huawei Nova 13">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Huawei Nova 13</h5>
+                            <p class="card-text text-muted">Thiết kế mỏng nhẹ, camera đẹp, màu sắc nổi bật.</p>
+                            <div class="mt-auto">
+                                <div class="price">9.990.000đ</div>
+                                <div class="old-price mb-3">10.990.000đ</div>
+                                <a href="detai.html" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 product-item" data-name="Nothing Phone 3">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="image/realme-16t-xanh-thumb-600x600.jpg"
+                            class="card-img-top" alt="Nothing Phone 3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Nothing Phone 3</h5>
+                            <p class="card-text text-muted">Thiết kế độc đáo, giao diện hiện đại, hiệu năng tốt.</p>
+                            <div class="mt-auto">
+                                <div class="price">13.990.000đ</div>
+                                <div class="old-price mb-3">14.990.000đ</div>
+                                <a href="detai.html" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <h1>SẢN PHẨM TƯƠNG TỰ</h1>
+                    </div>
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-3 d-none d-md-block">
+                            <div class="rounded-3 overflow-hidden shadow-sm h-100">
+                                <img src="image/111111.png" alt="Banner" class="w-100 h-100" style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row g-4">
+                                <div class="col-6 col-md-4 product-item">
+                                    <div class="card product-card shadow-sm h-100">
+                                        <img src="image/honor-600s-5g-6gb-128gb-060926-115312-396-600x600.jpg" class="card-img-top" alt="Honor 600S 5G">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 product-item">
+                                    <div class="card product-card shadow-sm h-100">
+                                        <img src="image/honor-600s-5g-6gb-128gb-060926-115312-396-600x600.jpg" class="card-img-top" alt="Honor 600S 5G">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 product-item">
+                                    <div class="card product-card shadow-sm h-100">
+                                        <img src="image/honor-600s-5g-6gb-128gb-060926-115312-396-600x600.jpg" class="card-img-top" alt="Honor 600S 5G">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 product-item">
+                                    <div class="card product-card shadow-sm h-100">
+                                        <img src="image/honor-600s-5g-6gb-128gb-060926-115312-396-600x600.jpg" class="card-img-top" alt="Honor 600S 5G">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 product-item">
+                                    <div class="card product-card shadow-sm h-100">
+                                        <img src="image/honor-600s-5g-6gb-128gb-060926-115312-396-600x600.jpg" class="card-img-top" alt="Honor 600S 5G">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 product-item">
+                                    <div class="card product-card shadow-sm h-100">
+                                        <img src="image/honor-600s-5g-6gb-128gb-060926-115312-396-600x600.jpg" class="card-img-top" alt="Honor 600S 5G">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+

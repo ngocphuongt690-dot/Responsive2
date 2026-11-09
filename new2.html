@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tin tuc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/syte1.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .sapxep {
+            margin-top: 10px;
+        }
+
+        .khungsp {
+            border: none;
+            padding: 0;
+        }
+
+        .danh-muc {
+            border: 1px solid #0dcaf0;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 16px;
+            background: #fff;
+        }
+
+        .hop-gia {
+            border: 1px solid #0dcaf0;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 16px;
+            background: #fff;
+        }
+
+        .dm-tieu-de {
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: .5px;
+            margin-bottom: 8px;
+        }
+
+        .dm-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dm-list li a {
+            display: flex;
+            justify-content: space-between;
+            padding: 7px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+            color: #2b3fb5;
+            text-decoration: none;
+        }
+
+        .dm-list li a:hover {
+            color: #5a9a3c;
+        }
+
+        .nhom-sp {
+            margin-top: 16px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #0dcaf0;
+        }
+
+        .sp {
+            border: 1px solid gray;
+            height: 100%;
+            border-radius: 12px;
+            background-color: burlywood;
+        }
+
+        .sp img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            background-color: #fff;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        .sp .gia {
+            color: #e91e8c;
+        }
+
+        .khung-bao {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 12px;
+            background: #fff;
+        }
+
+        .mua {
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container p-0">
+            <div class="top-header py-3">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="image/1.jpg" alt="Logo" class="logo">
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <form class="d-flex justify-content-center">
+                            <input class="form-control me-2" type="text" placeholder="Tìm Kiếm">
+                            <button class="btn btn-primary" type="button">Tìm Kiếm</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-3 d-flex justify-content-end gap-2">
+                        <button class="btn btn-outline-primary" type="button">
+                            Đăng nhập
+                        </button>
+
+                        <button class="btn btn-primary" type="button">
+                            Đăng xuất
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark m1 bg-dark">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TRANG CHỦ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GIỚI THIỆU</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">THỜI SỰ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PHÁP LUẬT</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SỨC KHOẺ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ĐỜI SỐNG</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DU LỊCH</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">KINH DOANH</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BẤT ĐỘNG SẢN</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">THỂ THAO</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="container-fluid my-2">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="khung-bao">
+                    <div class="hop-gia">
+                        <div class="dm-tieu-de">LỌC THEO GIÁ</div>
+                        <label for="vol">giá tiền từ 0-30000000:</label>
+                        <input type="range" id="gia" min="0" max="30000000" step="100000" value="30000000"
+                            class="w-100">
+                        <div id="hienThi">giá tiền</div>
+                    </div>
+
+                    <div class="danh-muc">
+                        <div class="dm-tieu-de">DANH MỤC SẢN PHẨM</div>
+                        <ul class="dm-list">
+                            <li><a href="#Garena">Iphone</a></li>
+                            <li><a href="#Vina">Samsung</a></li>
+                            <li><a href="#Viettet">Oppo</a></li>
+                            <li><a href="#Mobi">Huawei</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="sapxep mb-2"> </div>
+                <div class="row">
+                    <div class="col-6 col-md-4 mb-4 san-pham">
+                        <div class="sp p-2">
+                            <img src="image/iphone-17-pro-cam-thumb-600x600.jpg" class="card-img-top" alt="Iphone">
+                            <h6>Iphone 17 pro cam</h6>
+                            <p class="text-danger fw-bold">27.799.000đ</p>
+                            <div class="mua"><a href="#" class="btn btn-primary btn-sm">Mua ngay</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-4 san-pham">
+                        <div class="sp p-2">
+                            <img src="image/iphone-17-pro-max-cam-thumb-600x600.jpg" class="card-img-top" alt="Iphone">
+                            <h6>Iphone 17 pro-max cam</h6>
+                            <p class="text-danger fw-bold">25.000.000đ</p>
+                            <div class="mua"><a href="#" class="btn btn-primary btn-sm">Mua ngay</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-4 san-pham">
+                        <div class="sp p-2">
+                            <img src="image/samsung-galaxy-s26-fe-5g-blue-thumb-600x600.jpg" class="card-img-top" alt="Samsung">
+                            <h6>Samsung galaxy s26 </h6>
+                            <p class="text-danger fw-bold">24.790.090đ</p>
+                            <div class="mua"><a href="#" class="btn btn-primary btn-sm">Mua ngay</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-4 san-pham">
+                        <div class="sp p-2">
+                            <img src="image/samsung-galaxy-z-fold8-kem-thumb-600x600.jpg" class="card-img-top" alt="Samsung">
+                            <h6>Samsung galaxy z</h6>
+                            <p class="text-danger fw-bold">32.000.000đ</p>
+                            <div class="mua"> <a href="#" class="btn btn-primary btn-sm">Mua ngay</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-4 san-pham">
+                        <div class="sp p-2">
+                            <img src="image/楼层图---手机.webp" class="card-img-top" alt="Huawei">
+                            <h6>Huawei 2026</h6>
+                            <p class="text-danger fw-bold">24.500.000đ</p>
+                            <div class="mua"><a href="#" class="btn btn-primary btn-sm">Mua ngay</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-4 san-pham">
+                        <div class="sp p-2">
+                            <span class="badge bg-danger giam-gia">Giảm giá</span>
+                            <img src="image/428_428_48A9823367E67FF1EFD0F0E57AE7CAA8mp.webp" class="card-img-top" alt="Huawei">
+                            <h6>Huawei Pro max 2026</h6>
+                            <del class="text-muted">75.500.000đ</del>
+                            <p class="text-danger fw-bold">420.000đ</p>
+                            <div class="mua"><a href="#" class="btn btn-primary btn-sm">Mua ngay</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-light pt-4 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5>CellPC</h5>
+                    <p>
+                        Địa chỉ: 123 Đường Công Nghệ, Q.1, TP.HCM<br>
+                        Hotline: 1900 6868<br>
+                        Email: cellpc.support@gmail.com<br>
+                        Giờ mở cửa: 8:00 - 21:00, cả tuần
+                    </p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5>Bản đồ cửa hàng</h5>
+                    <iframe
+                        src="https://maps.google.com/maps?q=123%20%C4%90%C6%B0%E1%BB%9Dng%20C%C3%B4ng%20Ngh%E1%BB%87%2C%20Qu%E1%BA%ADn%201%2C%20TP.HCM&output=embed"
+                        width="100%" height="220" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="text-center py-3 border-top border-secondary">
+                Bản quyền © VÕ CÔNG THÀNH
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/man.js"></script>
+</body>
+
+</html>
